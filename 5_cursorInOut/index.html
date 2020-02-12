@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" type="text/css" href="debugging_jquery.css">
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+            $('img').hover(function(){
+                var temp = $(this).attr('src');
+                $(this).attr("src",$(this).attr('alt-src'));
+                $(this).attr("alt-src",temp);
+            })
+        });
+    </script>
+</head>
+<body>
+    <style>
+        img{
+            width: 250px;
+            outline: 1px solid black;
+            margin: 5px;
+        }
+    
+
+    </style>
+    
+    <img src="front-end.jpg" alt-src="back-end.jpg" alt="trenes">
+    <img src="front-end.jpg" alt-src="back-end.jpg" alt="trenes">
+    <img src="front-end.jpg" alt-src="back-end.jpg" alt="trenes">
+    <img src="front-end.jpg" alt-src="back-end.jpg" alt="trenes">
+
+
+
+</body>
+
+
+
