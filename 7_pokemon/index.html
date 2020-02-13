@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<script>
+        var dasysensual = function(){
+            for(var i = 1; i < 250; i ++){
+                $('.pokemon').append("<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+i+".png'>");
+                console.log("asd");
+            }
+        }
+
+        $(document).ready(function(){
+           dasysensual();
+            });      
+
+
+    </script>
+</head>
+<body>
+    <style>
+        img {
+            width: 100px;
+            outline: 1px solid black;
+
+        }
+    </style>
+    
+
+
+    <div class= 'pokemon'>
+    </div>
+
+</body>
+</html>
+
